@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pokemon">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pokemon App</title>
+        <link rel="stylesheet" href="./app2/css/main.css">
+    </head>
+    <body>
+        <nav>
+            <a ui-sref="home">Home</a>
+            <a ui-sref="characters">Characters</a>
+            <a ui-sref="char({id:1})">Character 1</a>
+        </nav>
+        <div >
+            <h1>Pokemon App</h1>
+        </div>
+        <div ui-view>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" charset="utf-8"></script>
+    <!--  Loading the angular router cdn.-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js" charset="utf-8"></script>
+        <script src="app2/app2.js"></script>
+        <script src="app2/controllers/characterCtrl.js"></script>
+        <script src="app2/controllers/charCtrl.js"></script>
+        <script src="./app2/services/characterSvc.js"></script>
+    </body>
+</html>

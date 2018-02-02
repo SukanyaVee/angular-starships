@@ -1,0 +1,8 @@
+<h2>The Home of the Pokemon Characters</h2>
+
+<div ng-repeat="character in characters">
+    <div>Name: {{character.name}}</div>
+    <div>Weight: {{character.weight}}</div>
+    <img src='{{character.pictureUrl}}'>
+    <div><a ui-sref="char({id:character.id})">Link</a></div>
+</div>
